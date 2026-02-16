@@ -4,55 +4,174 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jesse Yon Fong — Hybrid Tech Operator</title>
-    <style>
-      body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; margin: 0; }
-      .wrap { max-width: 900px; margin: 0 auto; padding: 56px 20px; }
-      .tag { display:inline-block; padding: 6px 10px; border: 1px solid #ddd; border-radius: 999px; margin-right: 8px; margin-bottom: 8px; font-size: 14px; }
-      h1 { font-size: 40px; margin: 0 0 12px; }
-      p { font-size: 18px; line-height: 1.6; margin: 0 0 18px; color: #333; }
-      a { color: inherit; }
-      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
-      .card { border: 1px solid #eee; border-radius: 16px; padding: 16px; }
-      .card h3 { margin: 0 0 8px; }
-      .muted { color: #666; font-size: 14px; }
-      @media (max-width: 700px) { .grid { grid-template-columns: 1fr; } h1 { font-size: 32px; } }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <header>
+      <nav class="header-nav">
+        <a href="index.html" class="logo">JYF</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main class="wrap">
-      <div>
-        <span class="tag">Full-stack</span>
-        <span class="tag">Data + Analytics</span>
-        <span class="tag">Automation</span>
-        <span class="tag">Product Ops</span>
-      </div>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="skills">
+          <span class="tag">Full-stack</span>
+          <span class="tag">Data + Analytics</span>
+          <span class="tag">Automation</span>
+          <span class="tag">Product Ops</span>
+        </div>
+        
+        <h1>Jesse Yon Fong</h1>
+        <p class="subtitle">Hybrid tech operator building real systems across apps, data, payments, and automation.</p>
+        <p class="muted">Building products that solve real problems. Let's create something meaningful.</p>
+      </section>
 
-      <h1>Jesse Yon Fong</h1>
-      <p>
-        Hybrid tech operator building real systems across apps, data, payments, and automation.
-      </p>
-      <p class="muted">
-        (This is the starter page. Next we’ll add Projects, Case Studies, and contact links.)
-      </p>
+      <!-- About Section -->
+      <section class="about-section">
+        <h2>About Me</h2>
+        <p>
+          I'm a hybrid tech operator with 2+ years of experience building real systems that deliver tangible business value. I combine full-stack development, data analytics, and product operations to solve complex problems at scale.
+        </p>
+        <p>
+          My approach is pragmatic and results-focused. Whether I'm architecting cloud infrastructure, building user-facing products, or optimizing data pipelines, I prioritize creating solutions that matter—ones that actually work and generate measurable impact for users and businesses.
+        </p>
+        <p>
+          Currently, I'm focused on helping growth-stage companies leverage technology to scale efficiently. I thrive in environments where I can wear multiple hats and contribute across the entire product stack.
+        </p>
+      </section>
 
-      <section class="grid">
-        <div class="card">
-          <h3>Edmonton Baseball League Platform</h3>
-          <p class="muted">Supabase • Stripe • Real-time ops</p>
-        </div>
-        <div class="card">
-          <h3>Aprende Conmigo</h3>
-          <p class="muted">Expo • Kids UX • Progress tracking</p>
-        </div>
-        <div class="card">
-          <h3>Analytics Dashboards</h3>
-          <p class="muted">SQL • Tableau/BI • Insights</p>
-        </div>
-        <div class="card">
-          <h3>Marketing + Growth</h3>
-          <p class="muted">SEO • Meta ads • Community building</p>
+      <!-- Services Section -->
+      <section>
+        <h2 class="section-title">What I Do</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <span class="service-icon">⚙️</span>
+            <h3>Full-Stack Development</h3>
+            <p>Building scalable web and mobile applications from concept to production. React, Node.js, databases, APIs—end-to-end ownership.</p>
+          </div>
+          
+          <div class="service-card">
+            <span class="service-icon">📊</span>
+            <h3>Data & Analytics</h3>
+            <p>Custom dashboards, BI solutions, and data architecture. SQL, ETL pipelines, and insights that drive decisions.</p>
+          </div>
+          
+          <div class="service-card">
+            <span class="service-icon">🤖</span>
+            <h3>Automation & Ops</h3>
+            <p>Workflow automation, system optimization, and operational efficiency. Reducing manual work and scaling processes.</p>
+          </div>
+          
+          <div class="service-card">
+            <span class="service-icon">📈</span>
+            <h3>Growth & Product Ops</h3>
+            <p>Marketing ops, customer analytics, and growth strategy. Combining data, automation, and strategic thinking.</p>
+          </div>
+          
+          <div class="service-card">
+            <span class="service-icon">💳</span>
+            <h3>Payments & Commerce</h3>
+            <p>Payment processing, subscription management, and e-commerce systems. Integrations with Stripe and payment gateways.</p>
+          </div>
+          
+          <div class="service-card">
+            <span class="service-icon">🚀</span>
+            <h3>Product Strategy</h3>
+            <p>From idea to launch. Product definition, technical planning, and execution across the entire product lifecycle.</p>
+          </div>
+          
+          <div class="service-card">
+            <span class="service-icon">💡</span>
+            <h3>Custom App Development</h3>
+            <p>Build your vision into reality. Whether it's a web app, mobile app, or platform—I'll build a fully functional solution tailored to your exact needs.</p>
+          </div>
         </div>
       </section>
+
+      <!-- Work Section -->
+      <section id="work">
+        <h2 class="section-title">Featured Work</h2>
+        
+        <div class="grid">
+          <a href="projects.html#edmonton-baseball" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-icon">⚾</div>
+              <h3>Edmonton Baseball League Platform</h3>
+              <p class="muted">A comprehensive platform for managing baseball leagues with real-time operations, player management, and payment processing.</p>
+              <div class="card-tech">
+                <span class="tech-badge">Supabase</span>
+                <span class="tech-badge">Stripe</span>
+                <span class="tech-badge">Real-time</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects.html#aprende-conmigo" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-icon">📚</div>
+              <h3>Aprende Conmigo</h3>
+              <p class="muted">An educational mobile app designed for kids with intuitive UX, progress tracking, and engaging learning experiences.</p>
+              <div class="card-tech">
+                <span class="tech-badge">Expo</span>
+                <span class="tech-badge">UX Design</span>
+                <span class="tech-badge">Progress</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects.html#analytics-dashboards" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-icon">📊</div>
+              <h3>Analytics Dashboards</h3>
+              <p class="muted">Custom BI solutions and data visualization platforms that transform raw data into actionable insights.</p>
+              <div class="card-tech">
+                <span class="tech-badge">SQL</span>
+                <span class="tech-badge">Tableau</span>
+                <span class="tech-badge">BI</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="projects.html#marketing-growth" style="text-decoration: none; color: inherit;">
+            <div class="card">
+              <div class="card-icon">🚀</div>
+              <h3>Marketing + Growth</h3>
+              <p class="muted">End-to-end growth strategies combining SEO, paid advertising, and community building for scalable results.</p>
+              <div class="card-tech">
+                <span class="tech-badge">SEO</span>
+                <span class="tech-badge">Meta Ads</span>
+                <span class="tech-badge">Growth</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section" id="contact">
+        <h2>Ready to build something great?</h2>
+        <p>Let's work together to create solutions that matter.</p>
+        <a href="mailto:your-email@example.com" class="btn">Get in Touch</a>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+          <a href="#">Email</a>
+        </div>
+        <p class="footer-text">© 2026 Jesse Yon Fong. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
