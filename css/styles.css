@@ -1,5 +1,6 @@
 /* Skills Section Container */
 .skills-section-container {
+  background: -webkit-linear-gradient(135deg, rgba(6,182,212,0.06), rgba(139,92,246,0.06));
   background: linear-gradient(135deg, rgba(6,182,212,0.06), rgba(139,92,246,0.06));
   border: 1.5px solid rgba(6,182,212,0.13);
   border-radius: 16px;
@@ -63,6 +64,7 @@
 
 body { 
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+  background: -webkit-linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a2a3a);
   background: linear-gradient(-45deg, #0f172a, #1e293b, #0f172a, #1a2a3a);
   background-size: 400% 400%;
   color: #e2e8f0;
@@ -177,6 +179,7 @@ h1 {
   margin: 24px 0 32px;
   letter-spacing: -2px;
   line-height: 1.1;
+  background: -webkit-linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #06b6d4 100%);
   background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #06b6d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -230,6 +233,7 @@ p {
   transform: translateY(-50%);
   width: 6px;
   height: 32px;
+  background: -webkit-linear-gradient(180deg, #06b6d4, #8b5cf6);
   background: linear-gradient(180deg, #06b6d4, #8b5cf6);
   border-radius: 3px;
   box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
@@ -245,6 +249,7 @@ p {
 
 /* Card Styles */
 .card { 
+  background: -webkit-linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   border: 1px solid rgba(6, 182, 212, 0.2);
   border-radius: 12px;
@@ -269,6 +274,7 @@ p {
   left: -100%;
   width: 100%;
   height: 100%;
+  background: -webkit-linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.1), transparent);
   background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.1), transparent);
   transition: left 0.5s ease;
 }
@@ -329,6 +335,7 @@ p {
 /* About Section */
 .about-section {
   margin: 80px 0;
+  background: -webkit-linear-gradient(135deg, rgba(6, 182, 212, 0.05), rgba(139, 92, 246, 0.05));
   background: linear-gradient(135deg, rgba(6, 182, 212, 0.05), rgba(139, 92, 246, 0.05));
   border: 1px solid rgba(6, 182, 212, 0.1);
   border-radius: 12px;
@@ -389,6 +396,7 @@ p {
   transform: translateY(-50%);
   width: 4px;
   height: 20px;
+  background: -webkit-linear-gradient(180deg, #06b6d4, #8b5cf6);
   background: linear-gradient(180deg, #06b6d4, #8b5cf6);
   border-radius: 2px;
 }
@@ -407,6 +415,7 @@ p {
   top: 0;
   bottom: 0;
   width: 2px;
+  background: -webkit-linear-gradient(180deg, #06b6d4, #8b5cf6, transparent);
   background: linear-gradient(180deg, #06b6d4, #8b5cf6, transparent);
 }
 
@@ -427,6 +436,7 @@ p {
   top: 6px;
   width: 28px;
   height: 28px;
+  background: -webkit-linear-gradient(135deg, #06b6d4, #8b5cf6);
   background: linear-gradient(135deg, #06b6d4, #8b5cf6);
   border: 3px solid #0f172a;
   border-radius: 50%;
@@ -486,6 +496,7 @@ p {
 .skills-grid .skill-category:nth-child(7) { animation-delay: 0.5s; }
 
 .skill-category:hover {
+  background: -webkit-linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(139, 92, 246, 0.1));
   background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(139, 92, 246, 0.1));
   border-color: #06b6d4;
   transform: translateY(-8px);
@@ -535,6 +546,7 @@ p {
 }
 
 .service-card {
+  background: -webkit-linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   border: 1px solid rgba(6, 182, 212, 0.2);
   border-radius: 12px;
@@ -561,6 +573,7 @@ p {
   left: -100%;
   width: 100%;
   height: 100%;
+  background: -webkit-linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.1), transparent);
   background: linear-gradient(90deg, transparent, rgba(6, 182, 212, 0.1), transparent);
   transition: left 0.5s ease;
 }
@@ -614,6 +627,7 @@ p {
 .cta-section {
   margin-top: 80px;
   padding: 60px 40px;
+  background: -webkit-linear-gradient(135deg, #06b6d4, #8b5cf6);
   background: linear-gradient(135deg, #06b6d4, #8b5cf6);
   border-radius: 16px;
   color: white;
@@ -706,6 +720,7 @@ footer {
   width: 56px;
   height: 56px;
   border-radius: 50%;
+  background: -webkit-linear-gradient(135deg, #06b6d4, #8b5cf6);
   background: linear-gradient(135deg, #06b6d4, #8b5cf6);
   border: 2px solid rgba(255, 255, 255, 0.2);
   color: white;
@@ -817,6 +832,7 @@ footer {
     padding: 18px 8px;
     margin: 32px 0 24px 0;
     border-radius: 12px;
+    background: -webkit-linear-gradient(135deg, rgba(6,182,212,0.04), rgba(139,92,246,0.04));
     background: linear-gradient(135deg, rgba(6,182,212,0.04), rgba(139,92,246,0.04));
     box-shadow: 0 2px 12px rgba(6,182,212,0.06);
   }
