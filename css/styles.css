@@ -83,16 +83,8 @@ nav.header-nav {
   margin: 0 auto;
   padding: 16px 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-}
-
-nav.header-nav .logo {
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: -0.5px;
-  text-decoration: none;
-  color: #e2e8f0;
 }
 
 nav.header-nav .nav-links {
