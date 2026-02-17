@@ -1,3 +1,21 @@
+/* Skills Section Container */
+.skills-section-container {
+  background: linear-gradient(135deg, rgba(6,182,212,0.06), rgba(139,92,246,0.06));
+  border: 1.5px solid rgba(6,182,212,0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(6,182,212,0.07);
+  padding: 36px 24px 24px 24px;
+  margin: 48px 0 0 0;
+  animation: slideInUp 0.8s ease backwards;
+}
+@media (max-width: 768px) {
+  .skills-section-container {
+    padding: 18px 8px 12px 8px;
+    border-radius: 12px;
+    margin: 24px 0 0 0;
+    box-shadow: 0 2px 12px rgba(6,182,212,0.06);
+  }
+}
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 @keyframes float {
