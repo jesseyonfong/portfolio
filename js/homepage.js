@@ -1,4 +1,32 @@
 // Parallax and Interactive Effects for Homepage
+// Mobile tilt effect for cards/FABs
+function handleDeviceTilt(event) {
+  const { gamma, beta } = event;
+  // gamma: left-to-right, beta: front-to-back
+  document.querySelectorAll('.card, .service-card, .fab').forEach(card => {
+    card.style.transform = `rotateY(${gamma * 0.2}deg) rotateX(${-beta * 0.2}deg)`;
+  });
+}
+
+if (window.matchMedia('(max-width: 768px)').matches && window.DeviceOrientationEvent) {
+  window.addEventListener('deviceorientation', handleDeviceTilt);
+}
+
+// Touch tap feedback for cards/FABs
+function addTapFeedback(selector) {
+  document.querySelectorAll(selector).forEach(el => {
+    el.addEventListener('touchstart', () => {
+      el.classList.add('tapped');
+    });
+    el.addEventListener('touchend', () => {
+      el.classList.remove('tapped');
+    });
+    el.addEventListener('touchcancel', () => {
+      el.classList.remove('tapped');
+    });
+  });
+}
+addTapFeedback('.card, .service-card, .fab, .btn');
 
 // Mouse parallax effect on cards
 const cards = document.querySelectorAll('.card, .service-card, .fab');
