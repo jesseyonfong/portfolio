@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get in Touch — Jesse Yon Fong</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+  </head>
+  <body>
+    <header>
+      <nav class="header-nav">
+        <a href="index.html" class="logo">JYF</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <!-- Hero Section -->
+      <section class="contact-hero">
+        <h1>Let's Build Something Great</h1>
+        <p class="subtitle">Tell me about your project. I'm always interested in hearing about new challenges and opportunities.</p>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <div class="form-container">
+          <form id="contactForm" class="contact-form">
+            <!-- Name -->
+            <div class="form-group">
+              <label for="name">What's your name?</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Jane Smith"
+                required
+              >
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Your email address</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="jane@company.com"
+                required
+              >
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <!-- Company/Organization -->
+            <div class="form-group">
+              <label for="company">Company or organization (optional)</label>
+              <input 
+                type="text" 
+                id="company" 
+                name="company" 
+                placeholder="Your company name"
+              >
+            </div>
+
+            <!-- Project Type -->
+            <div class="form-group">
+              <label for="projectType">What type of project are you interested in?</label>
+              <select id="projectType" name="projectType" required>
+                <option value="">Select a project type</option>
+                <option value="web-app">Web Application</option>
+                <option value="mobile-app">Mobile App</option>
+                <option value="full-stack">Full-Stack Platform</option>
+                <option value="data-analytics">Data & Analytics</option>
+                <option value="automation">Automation & Ops</option>
+                <option value="integrations">Integrations & APIs</option>
+                <option value="consulting">Consulting & Strategy</option>
+                <option value="other">Something else</option>
+              </select>
+              <span class="error-message" id="projectTypeError"></span>
+            </div>
+
+            <!-- Technologies Interested -->
+            <div class="form-group">
+              <label>Which technologies interest you? (select all that apply)</label>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="technologies" value="react">
+                  <span>React / React Native</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="technologies" value="nodejs">
+                  <span>Node.js / Backend</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="technologies" value="database">
+                  <span>Databases & SQL</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="technologies" value="analytics">
+                  <span>Data & Analytics</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="technologies" value="payments">
+                  <span>Payments & Commerce</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="technologies" value="automation">
+                  <span>Automation & Workflows</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="technologies" value="ai">
+                  <span>AI/ML Integration</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="technologies" value="not-sure">
+                  <span>Not sure yet</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Budget -->
+            <div class="form-group">
+              <label for="budget">What's your budget range? (optional)</label>
+              <select id="budget" name="budget">
+                <option value="">Select a range</option>
+                <option value="under-5k">Under $5,000</option>
+                <option value="5k-15k">$5,000 - $15,000</option>
+                <option value="15k-50k">$15,000 - $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value="100k-plus">$100,000+</option>
+                <option value="flexible">Flexible / TBD</option>
+              </select>
+            </div>
+
+            <!-- Timeline -->
+            <div class="form-group">
+              <label for="timeline">When do you need this completed?</label>
+              <select id="timeline" name="timeline" required>
+                <option value="">Select a timeline</option>
+                <option value="immediate">ASAP (within 2 weeks)</option>
+                <option value="1month">Within 1 month</option>
+                <option value="3months">Within 3 months</option>
+                <option value="6months">Within 6 months</option>
+                <option value="flexible">Flexible timeline</option>
+                <option value="tbd">Not sure yet</option>
+              </select>
+              <span class="error-message" id="timelineError"></span>
+            </div>
+
+            <!-- Project Description -->
+            <div class="form-group">
+              <label for="description">Tell me about your project</label>
+              <textarea 
+                id="description" 
+                name="description" 
+                placeholder="What problem are you trying to solve? What's your vision? Any specific features or requirements?"
+                rows="6"
+                required
+              ></textarea>
+              <span class="error-message" id="descriptionError"></span>
+            </div>
+
+            <!-- Current Stage -->
+            <div class="form-group">
+              <label>Where are you in the development process?</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="stage" value="idea">
+                  <span>Just an idea</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="stage" value="planning">
+                  <span>In planning / design phase</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="stage" value="started">
+                  <span>Already started development</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="stage" value="launched">
+                  <span>Already launched / need improvements</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="form-group">
+              <label for="notes">Anything else I should know? (optional)</label>
+              <textarea 
+                id="notes" 
+                name="notes" 
+                placeholder="Any links, files, competitors, or other context..."
+                rows="4"
+              ></textarea>
+            </div>
+
+            <!-- How They Found You -->
+            <div class="form-group">
+              <label for="referral">How did you hear about me?</label>
+              <select id="referral" name="referral">
+                <option value="">Select one</option>
+                <option value="portfolio">Portfolio website</option>
+                <option value="github">GitHub</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="referral">Referral from someone</option>
+                <option value="social">Social media</option>
+                <option value="search">Search engine</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Form Status Message -->
+            <div id="formMessage" class="form-message"></div>
+
+            <!-- Submit Button -->
+            <div class="form-action">
+              <button type="submit" class="btn btn-submit">Send My Project Details</button>
+              <p class="form-note">I'll get back to you within 24 hours</p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Quick Contact Info -->
+        <div class="contact-info">
+          <h3>Quick Contact</h3>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:jesseyonfong@gmail.com">jesseyonfong@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <p class="contact-label">Social</p>
+              <div class="social-links-inline">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">⏱️</span>
+            <div>
+              <p class="contact-label">Response Time</p>
+              <p>Usually within 24 hours</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section" style="margin-top: 80px;">
+        <h2>Ready to get started?</h2>
+        <p>Fill out the form above and let's discuss your project in detail.</p>
+        <a href="projects.html" class="btn">See My Work</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Twitter</a>
+          <a href="#">Email</a>
+        </div>
+        <p class="footer-text">© 2026 Jesse Yon Fong. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+      <a href="mailto:jesseyonfong@gmail.com" class="fab" title="Email me">
+        <span>✉️</span>
+        <span class="fab-label">Email</span>
+      </a>
+      <a href="projects.html" class="fab" title="View my projects">
+        <span>📁</span>
+        <span class="fab-label">Projects</span>
+      </a>
+      <a href="index.html" class="fab" title="Back to home">
+        <span>🏠</span>
+        <span class="fab-label">Home</span>
+      </a>
+    </div>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
